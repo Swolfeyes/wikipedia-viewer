@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Alegreya');
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two');
+
+.text {
+  color: #fff;
+}
+
+// Style
+
+.text {
+
+  &--style-header {
+    font-family: 'Shadows Into Light Two', cursive;
+  }
+
+  &--style-body {
+    font-family: 'Alegreya', serif;
+  }
+}
+
+// Types
+
+.text {
+
+  &--type-bold {
+    font-weight: bold;
+  }
+}
+// Media Queries
+
+@media (max-width: 1024px) {
+
+  .text {
+
+    &--size-small {
+      font-size: 15px;
+    }
+
+    &--size-medium {
+      font-size: 20px;
+    }
+
+    &--size-large {
+      font-size: 40px;
+    }
+  }
+}

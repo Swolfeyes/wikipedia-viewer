@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Wikipedia Viewer</title>
+    <link rel="stylesheet" type="text/css" href="build/main.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div id="root">
+      <div class="header-image">
+        <img src="assets/images/earth-header.jpg" alt="colourful lights" />
+      </div>
+      <div class="entries">
+        <div class="entries__header">
+          <div class="flex">
+            <div class="flex__item">
+              <div id="random-entry" class="entries__header__random">
+                <a href="https://en.wikipedia.org/wiki/Special:Random" id="random-search" target="_blank">
+                <h1 class="text text--style-header text--size-large">Random Entry</h1></a>
+              </div>
+            </div>
+            <div class="flex__item">
+              <div id="search-entry" class="entries__header__search">
+                <div class="flex">
+                  <div class="flex__item">
+                    <div  class="entries__header__search__item">
+                      <label for="search-box">
+                        <span class="text text--style-header text--size-medium">Search on Wikipedia....</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="flex__item">
+                    <div  class="entries__header__search__item">
+                      <input  id="search-box" type="text" name="search">
+                    </div>
+                  </div>
+                  <div class="flex__item">
+                    <div class="entries__header__search__item">
+                      <button id="button"><span class="text text--style-header text--size-medium">CLICK!</span></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="entries__body" id="entries-body">
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
